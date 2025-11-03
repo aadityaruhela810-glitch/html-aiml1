@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            padding: 40px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d1ffd1;
+            cursor: pointer;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Department Timetable</caption>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="3">Morning</th>
+            <th colspan="2">Afternoon</th>
+        </tr>
+        <tr>
+            <th>8–9 AM</th>
+            <th>9–10 AM</th>
+            <th>10–11 AM</th>
+            <th>1–2 PM</th>
+            <th>2–3 PM</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>CSE Lab</td>
+            <td colspan="2">Project Work</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>AI/ML</td>
+            <td>Data Structures</td>
+            <td>Electronics</td>
+            <td>Workshop</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="3">Seminar</td>
+            <td>Library</td>
+            <td>Maths Tutorial</td>
+        </tr>
+    </table>
+
+</body>
+</html>
